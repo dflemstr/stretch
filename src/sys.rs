@@ -59,8 +59,8 @@ mod alloc {
 mod core {
     use typenum::marker_traits::Unsigned;
 
-    type MaxNodeCount = heapless::consts::U256;
-    type MaxChildCount = heapless::consts::U16;
+    type MaxNodeCount = heapless::consts::U16;
+    type MaxChildCount = heapless::consts::U8;
     type MaxParentsCount = heapless::consts::U1;
 
     pub type Map<K, V> = ::heapless::FnvIndexMap<K, V, MaxNodeCount>;
